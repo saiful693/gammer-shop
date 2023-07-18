@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+    --primary-color: #FF42A5;
+}
+
+/* nav section */
+.nav-container {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav-icon-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-item-section ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav-item-section>ul a {
+    text-decoration: none;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.nav-title {
+    color: #0B0223;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.purple {
+    color: #FF42A5;
+}
+
+.nav-item-section>ul .follow-us {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 18px 20px;
+}
+
+.fa-youtube {
+    color: red;
+    margin-left: 2px;
+}
+
+.fa-tiktok {
+    margin-left: 15px;
+}
+
+/* banner section */
+.banner-container {
+    background: hsla(0, 0%, 100%, 0.842);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner-title-1 {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+
+.banner-content h1 {
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-content ul {
+    margin-top: 20px;
+
+}
+
+.banner-content li {
+    list-style: none;
+    margin-bottom: 17px;
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.banner-content li>span {
+    margin-right: 10px;
+    color: red;
+}
+
+.btn-primary {
+    border-radius: 48px;
+    border: none;
+    padding: 20px 40px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.sign-in{
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+
+.go-rogue{
+    background: #4EC5F7;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:425px) {
+
+    .nav-container,
+    .nav-item-section ul {
+        flex-direction: column;
+    }
+
+    .nav-item-section ul {
+        margin-top: 20px;
+        gap: 30px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-img{
+        margin-bottom: 50px;
+    }
+    .banner-img img {
+        width: 100%;
+        padding: 20px;
+    }
+}
